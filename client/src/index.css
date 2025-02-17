@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.projectCard{
+    display: block;
+    transition: all;
+    transition-duration: 750ms;
+    transition-timing-function: ease-in-out;
+}
+
+.projectCard:hover{
+    transform: rotate(360deg);
+}
+
+
+.scrollbar{
+    scrollbar-width: none;
+}
+
+.scene{
+    height: 400px;
+    width: 300px;
+    perspective: 1000px;
+}
+
+.card{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
+
+.card_face{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+}
+
+.front{
+    background-color: white;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.back{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: rotateY(180deg);
+}
+
+.card.is-flipped{
+    transform: rotateY(180deg);
+}
+
+/* .home{
+    background-image: url("/bg-image.j");
+    background-size: cover;
+    background-position: center;
+} */
