@@ -19,7 +19,7 @@ const ProjectCard = (props) => {
         <div className="card_face front border border-white text-white border-solid mx-3 rounded-tl-[60px] rounded-br-[60px] projectCard group z-10 hover:scale-110 
       bg-gray-400 bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-0 flex flex-row">
           
-          <h1 className="text-2xl font-bold mb-10">{props.title}</h1>
+          <h1 className="text-2xl font-bold mb-10 px-5">{props.title}</h1>
           <p className="px-5">{props.description}</p>
 
         </div>
