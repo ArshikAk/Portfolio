@@ -1,5 +1,5 @@
 import { useEffect, useRef, useCallback } from "react";
-import Particles from "react-tsparticles";
+import {Particles} from "react-tsparticles";
 import { loadSlim } from "tsparticles-slim";
 import Footer from "../components/Footer";
 import LeftSideBar from "../components/LeftSideBar";
