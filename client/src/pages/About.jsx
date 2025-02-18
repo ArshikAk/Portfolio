@@ -14,37 +14,38 @@ const About = () => {
   }, []);
 
   const particlesOptions = {
-    fullScreen: { enable: true, zIndex: 10 },
-    background: { color: "#f8f9fa" },
+    fullScreen: { enable: true, zIndex: -1 },
+    background: { color: "#ffffff" },
+    fpsLimit: 60,
     particles: {
-      number: { value: 100, density: { enable: true, value_area: 800 } },
-      color: { value: "#888888" },
-      shape: { type: "rectange" },
-      opacity: { value: 0.5, random: true },
-      size: { value: 3, random: true },
+      number: { value: 120, density: { enable: true, value_area: 800 } },
+      color: { value: ["#5E60CE", "#48BFE3", "#4EA8DE"] },
+      shape: { type: "triangle" },
+      opacity: { value: 0.7, random: true },
+      size: { value: 5, random: true },
+      move: { enable: true, speed: 2, direction: "none", outModes: "out" },
       links: {
         enable: true,
         distance: 150,
         color: "#888888",
-        opacity: 0.4,
+        opacity: 0.5,
         width: 1,
       },
-      move: { enable: true, speed: 1, direction: "none", outModes: "out" },
     },
     interactivity: {
       events: {
-        onHover: { enable: true, mode: "grab" },
+        onHover: { enable: true, mode: "repulse" },
         onClick: { enable: true, mode: "push" },
       },
       modes: {
-        grab: { distance: 200, links: { opacity: 0.8 } },
+        repulse: { distance: 100, duration: 0.4 },
         push: { quantity: 4 },
       },
     },
   };
 
   return (
-    <div className="relative w-screen h-screen overflow-hidden bg-gray-100">
+    <div className="relative w-screen h-screen overflow-hidden">
      
       <Particles
         id="tsparticles"
@@ -122,16 +123,16 @@ const About = () => {
             <div className="my-5">
               <h1 className="text-2xl italic font-semibold">What I Do</h1>
               <p className="flex items-center my-2">
-                <span className="text-lg font-semibold mx-2">UI/UX Design:</span>
-                Creating pixel-perfect, user-centric interfaces that enhance user engagement.
+                <span className="text-lg font-semibold mx-2">Frontend Development:</span>
+                Develop responsive, fast and interactive web application using React and Tailwind CSS.
               </p>
               <p className="flex items-center my-2">
                 <span className="text-lg font-semibold mx-2">Web Development:</span>
-                Transforming ideas into interactive, responsive, and high-performance websites.
+                Develop robust, secure and smooth backend systems using Node.js, Express.js and MongoDB/MySQL.
               </p>
               <p className="flex items-center my-2">
-                <span className="text-lg font-semibold mx-2">Brand Identity:</span>
-                Building cohesive digital aesthetics that align with a brand&apos;s vision.
+                <span className="text-lg font-semibold mx-2">Full-Stack Development:</span>
+                From idea to deployment, I built complete MERN stack applications with optimized performance, database management, and an engaging user interface.
               </p>
             </div>
           </div>

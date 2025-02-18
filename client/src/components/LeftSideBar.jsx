@@ -1,8 +1,5 @@
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
-import { FaTwitter } from "react-icons/fa";
-import { FaFacebook } from "react-icons/fa";
-import { FaYoutube } from "react-icons/fa";
 
 import { Link, useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
@@ -29,12 +26,16 @@ const LeftSideBar = () => {
       <Link to={"/projects"} className={`text-2xl -rotate-90 cursor-pointer hover:scale-125 transition-all duration-300 ease-in 
         ${isBackGroundBlack ? "invert" : ""}`}>Projects</Link>
 
-      <div className={isBackGroundBlack ? "invert" : ""}>
-        <FaLinkedin size={25} className="my-3 cursor-pointer hover:scale-125 transition-all duration-300 ease-in"/>
-        <FaGithub size={25} className="my-3 cursor-pointer hover:scale-125 transition-all duration-300 ease-in"/>
-        <FaTwitter size={25} className="my-3 cursor-pointer hover:scale-125 transition-all duration-300 ease-in"/>
-        <FaFacebook size={25} className="my-3 cursor-pointer hover:scale-125 transition-all duration-300 ease-in"/>
-        <FaYoutube size={25} className="my-3 cursor-pointer hover:scale-125 transition-all duration-300 ease-in"/>
+      <div className={`${isBackGroundBlack ? "invert" : ""} flex flex-col justify-center items-center`}>
+        <Link to="https://www.linkedin.com/in/arshik-s" target="_blank">
+          <FaLinkedin size={25} className="my-3 cursor-pointer hover:scale-125 transition-all duration-300 ease-in"/>
+        </Link>
+
+        <Link to="https://github.com/ArshikAk/" target="_blank">
+          <FaGithub size={25} className="my-3 cursor-pointer hover:scale-125 transition-all duration-300 ease-in"/>
+        </Link>
+
+        {/* <div className="h-1/3 w-[3px] bg-black"></div> */}
       </div>
     </div>
   )

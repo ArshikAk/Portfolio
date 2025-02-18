@@ -12,7 +12,7 @@ const Home = () => {
 
   useEffect(() => {
     const typed = new Typed(ref.current, {
-      strings: ["Developer"],
+      strings: ["Full Stack Developer","Front End Developer","Back End Developer"],
       typeSpeed: 50,
       backSpeed: 50,
       loop: true,
