@@ -12,15 +12,10 @@
   "dependencies": {
     "@tsparticles/react": "^3.0.0",
     "axios": "^1.7.9",
-    "particles.js": "^2.0.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-icons": "^5.4.0",
-    "react-particle-animation": "^2.0.2",
-    "react-particles-js": "^3.6.0",
     "react-router-dom": "^7.1.4",
-    "react-tsparticles": "^2.12.2",
-    "tsparticles-slim": "^2.12.0",
     "typed.js": "^2.1.0"
   },
   "devDependencies": {
