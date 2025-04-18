@@ -21,7 +21,7 @@ const LeftSideBar = () => {
 
   return (
     <div className="w-[5vw] h-full flex flex-col justify-around items-center">
-      <a href={"/ARSHIK_RESUME_1.pdf"} target="_blank" className={`text-2xl -rotate-90 cursor-pointer hover:scale-125 transition-all duration-300 ease-in 
+      <a href={"https://drive.google.com/file/d/1xyo50GpAiBMJLTqdc8F8AJNr1VRF0Wx8/view?usp=sharing"} target="_blank" className={`text-2xl -rotate-90 cursor-pointer hover:scale-125 transition-all duration-300 ease-in 
         ${isBackGroundBlack ? "invert" : ""}`}>Resume</a>
       <Link to={"/projects"} className={`text-2xl -rotate-90 cursor-pointer hover:scale-125 transition-all duration-300 ease-in 
         ${isBackGroundBlack ? "invert" : ""}`}>Projects</Link>
@@ -35,7 +35,6 @@ const LeftSideBar = () => {
           <FaGithub size={25} className="my-3 cursor-pointer hover:scale-125 transition-all duration-300 ease-in"/>
         </Link>
 
-        {/* <div className="h-1/3 w-[3px] bg-black"></div> */}
       </div>
     </div>
   )
