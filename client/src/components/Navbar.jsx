@@ -24,7 +24,7 @@ const Navbar = () => {
         hover:shadow-2xl hover:shadow-black hover:scale-110 transition-all duration-300 ease-in ${isBackGroundBlack ? "invert" : ""}`}>
           <IoIosArrowBack/>
       </Link>
-      <p className={`text-xl cursor-pointer hover:scale-125 transition-all duration-300 ease-in ${isBackGroundBlack ? "invert" : ""}`}>Say hi...</p>
+      <Link to={"/contact"} className={`text-xl cursor-pointer hover:scale-125 transition-all duration-300 ease-in ${isBackGroundBlack ? "invert" : ""}`}>Say hi...</Link>
     </div>
   )
 }

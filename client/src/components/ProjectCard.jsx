@@ -21,7 +21,7 @@ const ProjectCard = (props) => {
       <div className={`${isFlipped ? "card is-flipped" : "card"}`}>
         
         <div className="card_face front border border-white text-white mx-3 rounded-tl-[60px] rounded-br-[60px]">
-          <h1 className="text-2xl font-bold mb-10">{props.title}</h1>
+          <h1 className="text-2xl font-bold mb-10 p-3">{props.title}</h1>
           <p className="px-5">{props.description}</p>
         </div>
 

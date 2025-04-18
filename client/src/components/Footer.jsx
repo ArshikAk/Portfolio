@@ -23,7 +23,7 @@ const Footer = () => {
   return (
     <div className="flex justify-evenly items-center">
       <p className={`text-2xl cursor-pointer hover:scale-125 transition-all duration-300 ease-in  ${isBackGroundBlack ? "invert" : ""}`} onClick={() => navigate("/about")} >About</p>
-      <p className={`text-2xl cursor-pointer hover:scale-125 transition-all duration-300 ease-in  ${isBackGroundBlack ? "invert" : ""}`} onClick={() => navigate("/skills")}>My Skills</p>
+      <p className={`text-2xl cursor-pointer hover:scale-125 transition-all duration-300 ease-in  ${isBackGroundBlack ? "invert" : ""}`} onClick={() => navigate("/skills")}>Skills</p>
     </div>
   )
 }
